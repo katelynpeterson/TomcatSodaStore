@@ -19,7 +19,7 @@
 			List result = (List)request.getAttribute("result");
 			Iterator vp = result.iterator();
 			while(vp.hasNext()){
-				out.println("<tr><td>" + vp.next()+"</td></tr>");
+				out.println("<tr><td>" + vp.next().toString() +"</td></tr>");
 			}
 			%>
 			</table>
