@@ -58,7 +58,7 @@ public class SodaSelect{
                  vnp.add(new VendorNProduct("COUNTRYTIME","Strawberry Lemonade"));
                  vnp.add(new VendorNProduct("COUNTRYTIME","Lemonade"));
 		 vnp.add(new VendorNProduct("COUNTRYTIME","Pink Lemonade"));
-		
+		System.out.println(vnp.size()+" test size");
 		return vnp;
 	
 	}
