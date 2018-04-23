@@ -43,7 +43,7 @@ public class SodaSelect{
 
 	public List getVendorProducts(){
 
-		 vnp.add(new VendorNProduct("PEPSICO","Pepsi"));
+		 		 vnp.add(new VendorNProduct("PEPSICO","Pepsi"));
                  vnp.add(new VendorNProduct("PEPSICO", "Mug Root Beer"));
                  vnp.add(new VendorNProduct("PEPSICO", "Mountain Dew"));
                  vnp.add(new VendorNProduct("COCACOLA", "Coca-Cola"));
@@ -57,7 +57,7 @@ public class SodaSelect{
                  vnp.add(new VendorNProduct("DASANI","Water"));
                  vnp.add(new VendorNProduct("COUNTRYTIME","Strawberry Lemonade"));
                  vnp.add(new VendorNProduct("COUNTRYTIME","Lemonade"));
-		 vnp.add(new VendorNProduct("COUNTRYTIME","Pink Lemonade"));
+                 vnp.add(new VendorNProduct("COUNTRYTIME","Pink Lemonade"));
 		System.out.println(vnp.size()+" test size");
 		return vnp;
 	
