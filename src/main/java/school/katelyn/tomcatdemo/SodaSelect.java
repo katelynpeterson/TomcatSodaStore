@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SodaSelect{
+ List<VendorNProduct> vnp = new ArrayList<VendorNProduct>();
+	
 	public List getAvailableBrands(SodaType type){
 		List brands = new ArrayList();
 
@@ -27,9 +29,44 @@ public class SodaSelect{
 		else if(type.equals(SodaType.DASANI)){
 			brands.add("Water");
 		}
+		else if(type.equals(SodaType.COUNTRYTIME)){
+			brands.add("Strawberry Lemonade");
+			brands.add("Lemonade");
+			brands.add("Pink Lemonade");
+		}
 		else{
 			brands.add("No Brand Available");
 		}	
 		return brands;
+	}
+
+	public List getVendorProducts(){
+
+		 vnp.add(new VendorNProduct("PEPSICO","Pepsi"));
+                 vnp.add(new VendorNProduct("PEPSICO", "Mug Root Beer"));
+                 vnp.add(new VendorNProduct("PEPSICO", "Mountain Dew"));
+                 vnp.add(new VendorNProduct("COCACOLA", "Coca-Cola"));
+                 vnp.add(new VendorNProduct("COCACOLA", "Sprite"));
+                 vnp.add(new VendorNProduct("COCACOLA", "Fanta"));
+                 vnp.add(new VendorNProduct("COCACOLA","Fresca"));
+                 vnp.add(new VendorNProduct("DRPEPPERSNAPPLE","7up"));
+                 vnp.add(new VendorNProduct("DRPEPPERSNAPPLE","A&W Root Beer"));
+                 vnp.add(new VendorNProduct("DRPEPPERSNAPPLE","Dr. Pepper"));
+                 vnp.add(new VendorNProduct("DRPEPPERSNAPPLE","Crush"));
+                 vnp.add(new VendorNProduct("DASANI","Water"));
+                 vnp.add(new VendorNProduct("COUNTRYTIME","Strawberry Lemonade"));
+                 vnp.add(new VendorNProduct("COUNTRYTIME","Lemonade"));
+		 vnp.add(new VendorNProduct("COUNTRYTIME","Pink Lemonade"));
+		
+		return vnp;
+	
+	}
+
+	public String getVen(){
+		return vnp.getVendor();
+	}
+
+	public String getProd(){
+		return vnp.getProduct();
 	}
 }

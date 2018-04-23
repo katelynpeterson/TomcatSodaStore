@@ -9,17 +9,17 @@
 	</head>
 	<body>
 		<div class="search">
-			<form id="mySearch" method="post" action="searchResult" target="_blank">
-			<input type="search" id="mySearch" placeholder="Search for a Soda">
+			<form id="mySearch" method="post" action="TomcatSodaStore/searchResult" target="_blank">
+			<input type="search" name="search" id="mySearch" placeholder="Search for a Soda">
 			</form>
-			<button onclick="myFunc()">Search</button>
+			<input type="submit">
 			<br><br>
 			<p id ="demo"></p>
 		</div>
 		
 		<center>
 			<h1>**Select the brand of Soda**</h1>
-			<form method="post" action="/SelectSoda">
+			<form method="post" action="TomcatSodaStore/SelectSoda">
 
 				<br>
 				<select name="Type" size="1">
