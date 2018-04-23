@@ -2,6 +2,7 @@ package school.katelyn;
 
 import school.katelyn.tomcatdemo.SodaSelect;
 import school.katelyn.tomcatdemo.SodaType;
+import school.katelyn.tomcatdemo.VendorNProduct;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -20,20 +21,22 @@ import java.lang.String;
 	urlPatterns ="/searchResult"
 )
 
-
+public class SearchResult extends HttpServlet{
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp)
 	throws ServletException, IOException{
-		String searchString = req.getParameter("search");
+		String searchString = (String)req.getParameter("search");
 		SodaSelect sodaSelect = new SodaSelect();
 		List sodaBrands = sodaSelect.getVendorProducts();
 			
 	
 		Iterator ss = sodaBrands.iterator();
 		List results;
+		
 		while(ss.hasNext()){
-			if(ss.next() == searchString.contains(sodaSelect.getVen() || sodaSelect.getProd())){
-				results.add(ss.next());	
+			VendorNProduct cur = (VendorNProduct) ss.next();
+			if(searchString.contains(cur.getVendor()) ||searchString.contains(cur.getProduct())){
+				results.add(cur);	
 			}
 		}
 
@@ -43,4 +46,5 @@ import java.lang.String;
 		view.forward(req, resp);
 	}
 }
+
 

@@ -5,6 +5,8 @@ public class VendorNProduct{
 	private String vendor ="";
 	private String product ="";
 	
+	public VendorNProduct() {}
+	
 	public VendorNProduct(String v, String p){
 		setVendor(v);
 		setProduct(p);

@@ -5,6 +5,7 @@ import java.util.List;
 
 public class SodaSelect{
  List<VendorNProduct> vnp = new ArrayList<VendorNProduct>();
+ VendorNProduct v = new VendorNProduct();
 	
 	public List getAvailableBrands(SodaType type){
 		List brands = new ArrayList();
@@ -63,10 +64,10 @@ public class SodaSelect{
 	}
 
 	public String getVen(){
-		return vnp.getVendor();
+		return v.getVendor();
 	}
 
 	public String getProd(){
-		return vnp.getProduct();
+		return v.getProduct();
 	}
 }
