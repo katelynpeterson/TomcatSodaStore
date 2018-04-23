@@ -31,8 +31,8 @@ public class SearchResult extends HttpServlet{
 			
 	
 		Iterator ss = sodaBrands.iterator();
-		List results;
-		
+		List results = new ArrayList<VendorNProduct>();
+
 		while(ss.hasNext()){
 			VendorNProduct cur = (VendorNProduct) ss.next();
 			System.out.println(searchString + " is my search string\n");
