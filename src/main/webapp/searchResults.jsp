@@ -15,7 +15,6 @@
 					<th>Vender and Drink</th>
 				</tr>
 			<%
-			SodaSelect ss = new SodaSelect();
 			List result = (List)request.getAttribute("result");
 			Iterator vp = result.iterator();
 			while(vp.hasNext()){
