@@ -9,7 +9,7 @@
 	</head>
 	<body>
 		<div class="search">
-			<form id="mySearch" method="post" action="TomcatSodaStore/searchResult" target="_blank">
+			<form id="mySearch" method="post" action="searchResult" target="_blank">
 			<input type="search" name="search" id="mySearch" placeholder="Search for a Soda">
 			</form>
 			<br><br>
@@ -18,7 +18,7 @@
 		
 		<center>
 			<h1>**Select the brand of Soda**</h1>
-			<form method="post" action="TomcatSodaStore/SelectSoda">
+			<form method="post" action="SelectSoda">
 
 				<br>
 				<select name="Type" size="1">
