@@ -29,16 +29,21 @@ public class SearchResult extends HttpServlet{
 		SodaSelect sodaSelect = new SodaSelect();
 		List sodaBrands = sodaSelect.getVendorProducts();
 			
-	
+		
 		Iterator ss = sodaBrands.iterator();
-		List results = new ArrayList<VendorNProduct>();
+		List<String> results = new ArrayList<String>();
+		//String[] vendor = new String[results.size()];
+		//String[] product = new String[results.size()];
+		/*for(int i=0; i<results.size();i++) {
+			vendor[i] = results.get(i);
+		}*/
 
 		while(ss.hasNext()){
 			VendorNProduct cur = (VendorNProduct) ss.next();
 			System.out.println(searchString + " is my search string\n");
 			System.out.println("Vendor " + cur.getVendor() + " Product " + cur.getProduct());
 			if(searchString.contains(cur.getVendor()) ||searchString.contains(cur.getProduct())){
-				results.add(cur);	
+				results.add(cur.getVendor()+ " " + cur.getProduct());	
 				System.out.print(results.size()+ "result size");
 				
 			}
