@@ -42,9 +42,9 @@ public class SearchResult extends HttpServlet{
 			VendorNProduct cur = (VendorNProduct) ss.next();
 			System.out.println(searchString + " is my search string\n");
 			System.out.println("Vendor " + cur.getVendor() + " Product " + cur.getProduct());
-			if(searchString.contains(cur.getVendor()) ||searchString.contains(cur.getProduct())){
+			if(cur.getVendor().contains(searchString) ||cur.getProduct().contains(searchString)){
 				results.add(cur.getVendor()+ " " + cur.getProduct());	
-				System.out.print(results.size()+ "result size");
+				System.out.print(cur.getVendor() + " Vendor");
 				
 			}
 		}
