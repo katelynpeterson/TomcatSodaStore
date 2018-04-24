@@ -9,3 +9,9 @@
 144.17.123.63 - - [24/Apr/2018:01:02:35 +0000] "POST /TomcatSodaStore/searchResult HTTP/1.1" 200 307 http-bio-8080-exec-2 18
 144.17.123.63 - - [24/Apr/2018:01:02:49 +0000] "POST /TomcatSodaStore/searchResult HTTP/1.1" 200 253 http-bio-8080-exec-3 10
 144.17.123.63 - - [24/Apr/2018:01:03:06 +0000] "POST /TomcatSodaStore/searchResult HTTP/1.1" 200 516 http-bio-8080-exec-4 5
+144.17.123.63 - - [24/Apr/2018:01:09:50 +0000] "GET /TomcatSodaStore? HTTP/1.1" 200 1052 http-bio-8080-exec-1 121
+144.17.123.63 - - [24/Apr/2018:01:09:52 +0000] "POST /TomcatSodaStore/searchResult HTTP/1.1" 200 368 http-bio-8080-exec-2 16
+144.17.123.63 - - [24/Apr/2018:01:09:56 +0000] "POST /TomcatSodaStore/SelectSoda HTTP/1.1" 200 170 http-bio-8080-exec-3 5
+144.17.123.63 - - [24/Apr/2018:01:16:19 +0000] "POST /TomcatSodaStore/SelectSoda HTTP/1.1" 200 170 http-bio-8080-exec-5 2
+144.17.123.63 - - [24/Apr/2018:01:16:32 +0000] "GET /TomcatSodaStore? HTTP/1.1" 200 1052 http-bio-8080-exec-6 2
+144.17.123.63 - - [24/Apr/2018:01:16:52 +0000] "GET /TomcatSodaStore? HTTP/1.1" 200 1052 http-bio-8080-exec-7 2

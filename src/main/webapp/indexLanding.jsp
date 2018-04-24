@@ -12,7 +12,6 @@
 			<form id="mySearch" method="post" action="TomcatSodaStore/searchResult" target="_blank">
 			<input type="search" name="search" id="mySearch" placeholder="Search for a Soda">
 			</form>
-			<input type="submit">
 			<br><br>
 			<p id ="demo"></p>
 		</div>
